@@ -17,6 +17,16 @@ p {
 	margin: 25px;
 }
 
+h1 {
+	font-size: 28px;
+	margin-top: 10px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-top: 8px;
+}
+
 #home {
 	font-size: 25px;
 	margin-left: 10%;
@@ -46,7 +56,7 @@ p {
 
 .main-section {
 	float: left;
-	width: 54%;
+	width: 650px;
 	border: 2px solid #dddddd;
 	margin: 30px 0 40px 10%;
 	background-color: #ffffff;
@@ -54,7 +64,7 @@ p {
 
 .sidebar {
 	float: left;
-	width: 23%;
+	width: 270px;
 	border: 2px solid #dddddd;
 	margin-left: 30px;
 	margin-top: 30px;
@@ -94,7 +104,7 @@ p {
 .fa-github-square {
 	background-color: black;
 	color: white;
-	margin-left: 30px;
+	margin-left: 23px;
 }
 
 .fa-stack-overflow {
@@ -161,4 +171,64 @@ img {
 	margin: 20px 25px 0 25px;
 	float: left;
 	width: 180px;
+}
+
+@media screen and (max-width: 980px) {
+	.main-section {
+		width: 325px;
+	}
+
+	.center:after {
+    	clear: both;
+	}
+
+	.center {
+		margin: 0 20px 0 40px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main-section {
+		width: 90%;
+		margin: 30px 5% 15px 5%;
+	}
+
+	.center {
+		margin: 0;
+	}
+
+	.sidebar {
+		float: left;
+		width: 90%;
+		margin: 15px 5% 30px 5%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.center:after {
+		content: "";
+    	clear: both;
+    	display: table;
+	}
+
+	.center {
+		margin-left: 30%;
+	}
+
+	#home {
+		width: 100%;
+		margin: 0;
+	}
+
+	.about-link {
+		margin-left:30%;
+	}
+
+	#contact-link {
+		margin-right:30%;
+	}
+
+	header {
+		position:static;
+	}
 }
