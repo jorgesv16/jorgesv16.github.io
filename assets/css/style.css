@@ -1,0 +1,62 @@
+div, p, h1 {
+	color: #ffffff;
+}
+
+h1 {
+	font-size: 35px;
+	font-family: 'Exo 2', sans-serif;
+}
+
+p {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.score-board {
+	font-family: 'Stalinist One', cursive;
+	width: 400px;
+	height: 55px;
+	overflow: auto;
+}
+
+#crystals, h1, .instructions, .score-board {
+	margin: 30px;
+}
+
+.instructions {
+	width: 400px;
+}
+
+#target-score {
+	font-size: 35px;
+}
+
+#current-score {
+	margin-top: 10px;
+}
+
+#target-score {
+	float:left;
+}
+
+.crystal-image {
+	margin: 5px;
+}
+
+.win-lose {
+	float:left;
+	margin-left: 30px;
+}
+
+#current-score {
+	margin-left: 130px;
+	font-size: 25px;
+}
+
+.win {
+	float:left;
+}
+
+#wins, #losses {
+	float: right;
+	margin-left: 10px;
+}

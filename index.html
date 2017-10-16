@@ -4,25 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jorge's Hangman Game</title>
+  <title>Jorge's Crystal Game</title>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2|Gloria+Hallelujah|Stalinist+One" rel="stylesheet">
 </head>
 
 
-<body>
+<body background="assets/images/darkness.png">
 
 	<header>
-
+		<h1>Crystals Collector</h1>
 	</header>
 
-	<h2>Press Any Key to Get Started</h2>
-	<p>Wins: <div id="wins"></div></p>
-	<p>Number of Guesses Remaining: <div id="remaining"></div></p>
-	<p>Letters already guessed: <div id="guessed"></div></p>
+	<div class="instructions"><p>You will be given a random number at the start of the game.</p><br><p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p><br><p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p><br><p>The value of each crystal is hidden from you until you click on it.</p><br><p>Each time when the game starts, the game will change the values of each crystal</p></div>
+
+	<div class="score-board">
+		<div id="target-score"></div>
+		<div class="win-lose">
+			<div class="win">Wins: <div id="wins">0</div></div><br>
+			<div class="win">Losses: <div id="losses">0</div></div>
+		</div>
+	</div>
+
+	<div id="crystals">
+
+		<img class="crystal-image" id="red" data-crystalvalue="" src="https://vignette.wikia.nocookie.net/bejeweled/images/2/28/Bejeweled_Red_Gem.png/revision/latest?cb=20160328180521"></img>
+
+		<img class="crystal-image" id="blue" data-crystalvalue="" src="https://vignette.wikia.nocookie.net/bejeweled/images/0/05/Bejeweled_Blue_Gem.png/revision/latest?cb=20160328181137"></img>
+
+		<img class="crystal-image" id="yellow" data-crystalvalue="" src="https://vignette.wikia.nocookie.net/bejeweled/images/1/19/Bejeweled_Yellow_Gem.png/revision/latest?cb=20160328180956"></img>
+
+		<img class="crystal-image" id="green" data-crystalvalue="" src="https://vignette.wikia.nocookie.net/bejeweled/images/7/77/Bejeweled_Green_Gem.png/revision/latest?cb=20160328181039"></img>
+
+	</div>
+	
+	<div class="score-board">Your Total Score is: 
+		<div id="current-score"></div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<script src="assets/javascript/game.js"></script>
-
 
 </body>
 
