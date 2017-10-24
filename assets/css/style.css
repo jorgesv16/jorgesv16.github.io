@@ -1,40 +1,17 @@
-.wrapper {
-	background-color: grey;
-	height: 500px;
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
+body{
+	background-color: #778899;
 }
 
-.first-row, .second-row, .third-row {
-	height: 50px;
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
+#container {
+	width: 94%;
+	margin: 10px 3% 0 3%;
 }
 
-.answers-box {
-	height: 150px;
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
+.gif-btn {
+	margin: 3px;
 }
 
-.option, h1,  {
-	text-align: center;
-	margin: 5px 0 5px 0;
-}
-
-.option, .begin {
-	background-color: #4aaaa5;
-	margin: 10px;
-	width: 180px;
-}
-
-.option:hover { 
-    opacity: 0.5;
-}
-
-.begin:hover {
-	opacity: 0.5;
+.gif-box {
+	float: left;
+	margin: 5px;
 }
