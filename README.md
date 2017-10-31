@@ -1,2 +1,1 @@
-# TrainScheduler
-Train scheduler
+# TripStop
